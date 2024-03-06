@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(){
+    int n, m;
+    scanf("%d %d", &n, &m);
+    int t;
+    scanf("%d", &t);
+    m = m + t;
+    int temp;
+    temp = m / 60;
+    n = n + temp;
+    m = m % 60;
+    n = n % 24;
+    printf("%d %d", n, m);
+}
